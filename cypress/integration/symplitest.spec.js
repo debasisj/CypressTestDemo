@@ -9,7 +9,7 @@ context('Symplitest', () => {
 
 describe('Valid Login',()=>{
     it('.should() - make an valid login assertion', ()=>{
-        
+        cy.visit('https://app.labs.projecttickle.com.au/app/')
         cy.contains('Log in')
         cy.get('#Username').type('AutoTestVendorPublic')
         cy.get('#Password').type('Tickl3m3')
